@@ -11,6 +11,13 @@
 		D9158E262A4FBDFD00DD8E19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9158E252A4FBDFD00DD8E19 /* ContentView.swift */; };
 		D9158E282A4FBDFF00DD8E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9158E272A4FBDFF00DD8E19 /* Assets.xcassets */; };
 		D9158E2B2A4FBDFF00DD8E19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9158E2A2A4FBDFF00DD8E19 /* Preview Assets.xcassets */; };
+		D95FF9982A500842001FA5C8 /* fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FF9972A500842001FA5C8 /* fact.swift */; };
+		D95FF99A2A50122A001FA5C8 /* FeedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95FF9992A50122A001FA5C8 /* FeedBackView.swift */; };
+		D95FF99D2A51531C001FA5C8 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D95FF99C2A51531C001FA5C8 /* ConfettiSwiftUI */; };
+		D95FF9A02A515F85001FA5C8 /* Subsonic in Frameworks */ = {isa = PBXBuildFile; productRef = D95FF99F2A515F85001FA5C8 /* Subsonic */; };
+		D95FF9A22A516312001FA5C8 /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D95FF9A12A516312001FA5C8 /* example.mp3 */; };
+		D9D4EDF32A4FDAF800C72A51 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4EDF22A4FDAF800C72A51 /* FactView.swift */; };
+		D9D4EDF52A4FDB4A00C72A51 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4EDF42A4FDB4A00C72A51 /* QuizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,11 @@
 		D9158E252A4FBDFD00DD8E19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9158E272A4FBDFF00DD8E19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9158E2A2A4FBDFF00DD8E19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D95FF9972A500842001FA5C8 /* fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fact.swift; sourceTree = "<group>"; };
+		D95FF9992A50122A001FA5C8 /* FeedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackView.swift; sourceTree = "<group>"; };
+		D95FF9A12A516312001FA5C8 /* example.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = example.mp3; sourceTree = "<group>"; };
+		D9D4EDF22A4FDAF800C72A51 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
+		D9D4EDF42A4FDB4A00C72A51 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95FF9A02A515F85001FA5C8 /* Subsonic in Frameworks */,
+				D95FF99D2A51531C001FA5C8 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +65,15 @@
 		D9158E222A4FBDFD00DD8E19 /* useless facts app */ = {
 			isa = PBXGroup;
 			children = (
+				D95FF9A12A516312001FA5C8 /* example.mp3 */,
 				D9158E232A4FBDFD00DD8E19 /* useless_facts_appApp.swift */,
 				D9158E252A4FBDFD00DD8E19 /* ContentView.swift */,
 				D9158E272A4FBDFF00DD8E19 /* Assets.xcassets */,
 				D9158E292A4FBDFF00DD8E19 /* Preview Content */,
+				D9D4EDF22A4FDAF800C72A51 /* FactView.swift */,
+				D9D4EDF42A4FDB4A00C72A51 /* QuizView.swift */,
+				D95FF9972A500842001FA5C8 /* fact.swift */,
+				D95FF9992A50122A001FA5C8 /* FeedBackView.swift */,
 			);
 			path = "useless facts app";
 			sourceTree = "<group>";
@@ -83,6 +102,10 @@
 			dependencies = (
 			);
 			name = "useless facts app";
+			packageProductDependencies = (
+				D95FF99C2A51531C001FA5C8 /* ConfettiSwiftUI */,
+				D95FF99F2A515F85001FA5C8 /* Subsonic */,
+			);
 			productName = "useless facts app";
 			productReference = D9158E202A4FBDFD00DD8E19 /* useless facts app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,10 @@
 				Base,
 			);
 			mainGroup = D9158E172A4FBDFD00DD8E19;
+			packageReferences = (
+				D95FF99B2A51531C001FA5C8 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				D95FF99E2A515F85001FA5C8 /* XCRemoteSwiftPackageReference "Subsonic" */,
+			);
 			productRefGroup = D9158E212A4FBDFD00DD8E19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95FF9A22A516312001FA5C8 /* example.mp3 in Resources */,
 				D9158E2B2A4FBDFF00DD8E19 /* Preview Assets.xcassets in Resources */,
 				D9158E282A4FBDFF00DD8E19 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D4EDF32A4FDAF800C72A51 /* FactView.swift in Sources */,
+				D9D4EDF52A4FDB4A00C72A51 /* QuizView.swift in Sources */,
 				D9158E262A4FBDFD00DD8E19 /* ContentView.swift in Sources */,
+				D95FF9982A500842001FA5C8 /* fact.swift in Sources */,
 				D9158E242A4FBDFD00DD8E19 /* useless_facts_appApp.swift in Sources */,
+				D95FF99A2A50122A001FA5C8 /* FeedBackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +369,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D95FF99B2A51531C001FA5C8 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D95FF99E2A515F85001FA5C8 /* XCRemoteSwiftPackageReference "Subsonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Subsonic";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D95FF99C2A51531C001FA5C8 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D95FF99B2A51531C001FA5C8 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+		D95FF99F2A515F85001FA5C8 /* Subsonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D95FF99E2A515F85001FA5C8 /* XCRemoteSwiftPackageReference "Subsonic" */;
+			productName = Subsonic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D9158E182A4FBDFD00DD8E19 /* Project object */;
 }
